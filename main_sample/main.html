@@ -4,26 +4,15 @@
 </head>
  <body>
   <h1>Car controller</h1>
-  <p> use arrow keys to controll </P>
-  <a href="/REDGREEN=1\"><button>Red & Green </button></a>
+  <p> use arrow keys to controll </P>	
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script type="text/javascript">
-    document.onkeydown = function(e) {
-    switch (e.keyCode) {
-        case 37:
-            window.location = "/left=1";
-            break;
-        case 38:
-            window.location = "/up=1";
-            break;
-        case 39:
-            window.location = "/right=1";
-            break;
-        case 40:
-            window.location = "/down=1";
-            break;
-    }
-};
-  </script>
+  <script type="text/javascript" src="http://yourjavascript.com/12817551511/main.js"></script>
+  <div style="text-align:center;width:480px;">
+  <button onmousedown="upKey()" onmouseup="" ontouchstart="upKey()">UP</button><br><br>
+  <button onmousedown="leftKey()" onmouseup="" ontouchstart="leftKey()">LEFT</button>
+  <button onmousedown="rightKey()" onmouseup="" ontouchstart="rightKey()">RIGHT</button><br><br>
+  <button onmousedown="downKey()" onmouseup="" ontouchstart="downKey()">DOWN</button>
+</div>
+	
 </body>
 </html>
