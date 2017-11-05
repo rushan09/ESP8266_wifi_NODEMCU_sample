@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+</head>
+ <body>
+  <h1>Car controller</h1>
+  <p> use arrow keys to controll </P>
+  <a href="/REDGREEN=1\"><button>Red & Green </button></a>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript">
+    document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            window.location = "/left=1";
+            break;
+        case 38:
+            window.location = "/up=1";
+            break;
+        case 39:
+            window.location = "/right=1";
+            break;
+        case 40:
+            window.location = "/down=1";
+            break;
+    }
+};
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+  client.println("HTTP/1.1 200 OK");
+  client.println("Content-Type: text/html");
+  client.println("");
+  client.println("<DOCTYPE HTML>");
+  client.println("<html>");
+  client.println("<style>");
+  client.println("body {background-color: #ACAEAD;}");
+  client.println("</style>");
+  client.println("<h1>Car controller</h1>");
+  client.println("<p> use arrow keys to controll </P>");
+  client.println("<script type=\"text/javascript\"> ");
+  client.println("document.onkeydown = function(e) { ");
+  client.println("switch (e.keyCode) { ");
+  client.println("case 37: window.location = \"/left=1\"; break; ");
+  client.println("case 38: window.location = \"/up=1\"; break; ");
+  client.println("case 39: window.location = \"/right=1\"; break; ");
+  client.println("case 40: window.location = \"/down=1\"; break; }}; ");
+  client.println("</script> </html> ");
